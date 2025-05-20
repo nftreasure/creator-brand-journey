@@ -22,7 +22,7 @@ if (import.meta.env.DEV && !(root instanceof HTMLElement)) {
 }
 
 render(() => (
-  <Router base="/creator-brand" root={Layout}>
+  <Router base="/creator-brand-journey" root={Layout}>
       <Route path="/" component={Home} />
       <Route path="/creative-phases" component={CreativePhases} />
       <Route path="/brand-development" component={CreatorBrandDevelopment} />
