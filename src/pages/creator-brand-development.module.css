@@ -1,0 +1,267 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.header {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.introduction {
+  max-width: 900px;
+  margin: 0 auto 3rem;
+  line-height: 1.6;
+  color: #444;
+}
+
+.coreThread {
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  padding: 2rem;
+  margin: 2rem auto;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.coreThreadTitle {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #333;
+  text-align: center;
+}
+
+.threadSteps {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.threadStep {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  text-align: center;
+  position: relative;
+  padding: 0 10px;
+}
+
+.threadStep:not(:last-child):after {
+  content: '';
+  position: absolute;
+  top: 25px;
+  right: -15%;
+  width: 30%;
+  height: 2px;
+  background-color: #ddd;
+}
+
+.threadStepIcon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+  font-weight: bold;
+  color: white;
+}
+
+.threadStepContent {
+  width: 100%;
+}
+
+.threadStepTitle {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.phaseContainer {
+  margin-bottom: 3rem;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.phaseHeader {
+  padding: 1.5rem;
+}
+
+.phaseTitle {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.phaseDescription {
+  font-size: 1.1rem;
+}
+
+.stagesContainer {
+  background-color: white;
+  padding: 1rem;
+}
+
+.stageRow {
+  display: flex;
+  padding: 1.5rem;
+  border-bottom: 1px solid #eee;
+}
+
+.stageRow:last-child {
+  border-bottom: none;
+}
+
+.stageIconContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 2rem;
+  min-width: 80px;
+}
+
+.stageIcon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+}
+
+.stageIconText {
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.stageContent {
+  flex: 1;
+}
+
+.stageName {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.stageDescription {
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+  color: #555;
+}
+
+.stageFocus {
+  background-color: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+.focusTitle {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #444;
+}
+
+.focusList {
+  margin-bottom: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+.focusList li {
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+.transitionContainer {
+  background-color: #f5f5f5;
+  padding: 1.5rem;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.transitionTitle {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: #444;
+}
+
+.transitionDescription {
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.questionsTitle {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.questionsList {
+  padding-left: 1.5rem;
+}
+
+.questionsList li {
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+.footnote {
+  background-color: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-top: 2rem;
+  color: #666;
+}
+
+.footnote p {
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.footnote p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .stageRow {
+    flex-direction: column;
+  }
+  
+  .stageIconContainer {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+  
+  .threadSteps {
+    flex-direction: column;
+  }
+  
+  .threadStep {
+    margin-bottom: 2rem;
+  }
+  
+  .threadStep:not(:last-child):after {
+    top: auto;
+    right: auto;
+    bottom: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 20px;
+  }
+}

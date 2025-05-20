@@ -1,0 +1,226 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.title {
+  font-size: 2.8rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 1.3rem;
+  color: #666;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.intro {
+  max-width: 900px;
+  margin: 0 auto 3rem;
+  line-height: 1.6;
+  color: #444;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+/* Component Cards */
+.cardContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12);
+}
+
+.cardTitle {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.card p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #555;
+  flex: 1;
+}
+
+/* Phase Overview */
+.journeyOverview {
+  margin: 3rem 0;
+}
+
+.overviewTitle {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+  text-align: center;
+}
+
+.phaseCard {
+  background-color: white;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  margin-bottom: 2rem;
+}
+
+.phaseTitle {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.phaseDescription {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+
+.stageList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.stageItem {
+  display: flex;
+  align-items: center;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 0.7rem 1rem;
+}
+
+.stageIcon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 0.9rem;
+  color: white;
+  margin-right: 0.7rem;
+}
+
+.stageName {
+  font-size: 0.9rem;
+  color: #444;
+}
+
+/* Core Thread */
+.coreThread {
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  padding: 2rem;
+  margin: 3rem 0;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+
+.coreThreadTitle {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #333;
+  text-align: center;
+}
+
+.coreThreadDescription {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.threadSteps {
+  display: flex;
+  justify-content: space-between;
+}
+
+.threadStep {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  text-align: center;
+  position: relative;
+  padding: 0 10px;
+}
+
+.threadStep:not(:last-child):after {
+  content: '';
+  position: absolute;
+  top: 25px;
+  right: -15%;
+  width: 30%;
+  height: 2px;
+  background-color: #ddd;
+}
+
+.threadStepIcon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+  font-weight: bold;
+  color: white;
+  background-color: #e67e22;
+}
+
+.threadStepContent {
+  width: 100%;
+}
+
+.threadStepTitle {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .threadSteps {
+    flex-direction: column;
+  }
+  
+  .threadStep {
+    margin-bottom: 2rem;
+  }
+  
+  .threadStep:not(:last-child):after {
+    top: auto;
+    right: auto;
+    bottom: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 20px;
+  }
+  
+  .stageList {
+    flex-direction: column;
+  }
+}

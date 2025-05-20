@@ -1,0 +1,340 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.header {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.introduction {
+  max-width: 900px;
+  margin: 0 auto 3rem;
+  line-height: 1.6;
+  color: #444;
+}
+
+/* Core Transformations */
+.coreTransformations {
+  margin: 2rem 0 3rem;
+}
+
+.sectionTitle {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+  text-align: center;
+}
+
+.transformationsContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.transformationCard {
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.transformationTitle {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #333;
+  text-align: center;
+}
+
+.transformationDescription {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.5;
+  text-align: center;
+}
+
+/* Community Timeline */
+.timelineContainer {
+  position: relative;
+  margin: 3rem 0;
+}
+
+.timeline {
+  position: absolute;
+  left: 50px;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background-color: #e0e0e0;
+}
+
+.phases {
+  display: flex;
+  flex-direction: column;
+}
+
+.phase {
+  margin-left: 80px;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  padding: 1.5rem;
+  position: relative;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.phase:before {
+  content: '';
+  position: absolute;
+  left: -30px;
+  top: 32px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: white;
+  border: 3px solid;
+  border-color: inherit;
+}
+
+.phase:after {
+  content: '';
+  position: absolute;
+  left: -10px;
+  top: 38px;
+  width: 15px;
+  height: 3px;
+  background-color: inherit;
+}
+
+.phaseTitle {
+  font-size: 1.6rem;
+  margin-bottom: 0.3rem;
+}
+
+.phaseSubtitle {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  font-weight: normal;
+}
+
+.description {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  color: #444;
+}
+
+.indicators {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+.indicatorTitle {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 0.8rem;
+}
+
+.indicatorList {
+  margin-bottom: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+.indicatorList li {
+  margin-bottom: 0.7rem;
+  line-height: 1.5;
+}
+
+/* Inflection Points */
+.inflectionPointsContainer {
+  margin: 3rem 0;
+}
+
+.inflectionTitle {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+  text-align: center;
+}
+
+.inflection {
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.inflectionHeader {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.marker {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #e67e22;
+  margin-right: 1rem;
+}
+
+.implications {
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+/* Strategies Section */
+.strategiesContainer {
+  margin: 3rem 0;
+}
+
+.strategiesTitle {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+  text-align: center;
+}
+
+.strategiesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.strategyCard {
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.strategyPhase {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #333;
+  text-align: center;
+}
+
+.strategyList {
+  padding-left: 1.5rem;
+}
+
+.strategyList li {
+  margin-bottom: 0.7rem;
+  line-height: 1.5;
+}
+
+/* Community Journey Map */
+.communityJourneyMap {
+  margin: 3rem 0;
+}
+
+.journeyMapContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  margin: 2rem 0;
+}
+
+.journeyMapColumn {
+  flex: 1;
+  background-color: #f8f8f8;
+  padding: 1.5rem;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.journeyMapHeader {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: #333;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.journeyMapContent {
+  line-height: 1.5;
+  color: #444;
+}
+
+.journeyMapContent p {
+  margin-bottom: 0.5rem;
+}
+
+.journeyMapArrow {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  color: #aaa;
+  padding: 0 0.5rem;
+}
+
+.footnote {
+  background-color: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-top: 2rem;
+  color: #666;
+}
+
+.footnote p {
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .journeyMapContainer {
+    flex-direction: column;
+  }
+  
+  .journeyMapColumn {
+    margin-bottom: 1rem;
+  }
+  
+  .journeyMapArrow {
+    transform: rotate(90deg);
+    margin: 0.5rem 0;
+    justify-content: center;
+  }
+  
+  .transformationsContainer {
+    grid-template-columns: 1fr;
+  }
+  
+  .strategiesGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .timeline {
+    left: 20px;
+  }
+  
+  .phase {
+    margin-left: 40px;
+  }
+  
+  .phase:before {
+    left: -25px;
+  }
+}
