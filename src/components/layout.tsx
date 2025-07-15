@@ -51,7 +51,7 @@ const Layout = (props: LayoutProps) => {
 
         {/* Footer */}
         <footer class={styles.footer}>
-          <p>&copy; {new Date().getFullYear()} TRESR. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} TRESR &amp; Calibrated Systems. All rights reserved.</p>
         </footer>
       </div>
     </MetaProvider>
